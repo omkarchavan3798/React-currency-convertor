@@ -1,14 +1,16 @@
 {
-  "name": "React-Currency-Convertor",
+  "homepage": "https://omkarchavan3798.github.io/React-Currency-Convertor",
+  "name": "currency-convertor",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "module", 
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",  
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.2",
